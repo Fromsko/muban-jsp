@@ -4,7 +4,7 @@
         <encoder>
             <pattern>[%highlight(%d{yyyy-MM-dd HH:mm:ss.SSS}){FATAL=red bold, ERROR=red, WARN=yellow, INFO=blue,
                 DEBUG=green, TRACE=cyan}] - %highlight(%-5level){FATAL=red bold, ERROR=red, WARN=yellow, INFO=blue,
-                DEBUG=green, TRACE=cyan} - %cyan(%logger{36}) | %msg%n%ex
+                DEBUG=green, TRACE=cyan} - %cyan(%logger{50}) | %msg%n%ex
             </pattern>
         </encoder>
     </appender>

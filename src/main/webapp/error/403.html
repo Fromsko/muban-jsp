@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哎呀！权限不够哦 🚫</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.output.css">
+    <style>
+        .shake {
+            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+            transform: translate3d(0, 0, 0);
+        }
+
+        @keyframes shake {
+            10%, 90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+            20%, 80% {
+                transform: translate3d(2px, 0, 0);
+            }
+            30%, 50%, 70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+            40%, 60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body class="h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500">
+<div class="container mx-auto text-center">
+    <div class="mb-8">
+        <span class="text-9xl text-white shake">🚫</span>
+    </div>
+    <h1 class="text-6xl font-bold text-white mb-4">5001</h1>
+    <h2 class="text-3xl text-white mb-8">抱歉，您没有权限访问此页面！</h2>
+    <a href="/" class="">返回安全区域</a>
+</div>
+</body>
+</html>

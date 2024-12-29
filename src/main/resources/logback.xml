@@ -1,0 +1,14 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <withJansi>true</withJansi> <!-- 启用 ANSI 支持 -->
+        <encoder>
+            <pattern>[%highlight(%d{yyyy-MM-dd HH:mm:ss.SSS}){FATAL=red bold, ERROR=red, WARN=yellow, INFO=blue,
+                DEBUG=green, TRACE=cyan}] - %highlight(%-5level){FATAL=red bold, ERROR=red, WARN=yellow, INFO=blue,
+                DEBUG=green, TRACE=cyan} - %cyan(%logger{36}) | %msg%n%ex
+            </pattern>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

@@ -182,3 +182,10 @@ public class HelloServlet extends HttpServlet {
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="docs/command-use.gif" alt="command-use.gif" />
 </div>
+
+---
+> 日志展示
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="docs/logger.png" alt="logger.png" />
+</div>

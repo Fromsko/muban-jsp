@@ -50,4 +50,12 @@
     <listener>
         <listener-class>work.comeback.omo.listener.WebListener</listener-class>
     </listener>
+
+    <!--
+        @Desc WebAttributeListener 监听 web 数据变化
+        @Path work.comeback.omo.listener.WebAttributeListener
+    -->
+    <listener>
+        <listener-class>work.comeback.omo.listener.WebAttributeListener</listener-class>
+    </listener>
 </web-app>

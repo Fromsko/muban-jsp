@@ -42,4 +42,12 @@
         <servlet-name>helloServlet</servlet-name>
         <servlet-class>work.comeback.omo.controller.HelloServlet</servlet-class>
     </servlet>
+
+    <!-- 
+        @Desc WebListener 监听 web 数据变化
+        @Path work.comeback.omo.listener.WebListener
+    -->
+    <listener>
+        <listener-class>work.comeback.omo.listener.WebListener</listener-class>
+    </listener>
 </web-app>

@@ -1,4 +1,4 @@
-package work.comeback.omo.listener;
+package work.comeback.omo.controller.listener;
 
 import jakarta.servlet.ServletContextAttributeEvent;
 import jakarta.servlet.ServletContextAttributeListener;

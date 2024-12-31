@@ -45,17 +45,51 @@
 
     <!-- 
         @Desc WebListener 监听 web 数据变化
-        @Path work.comeback.omo.listener.WebListener
+        @Path work.comeback.omo.controller.listener.WebListener
     -->
     <listener>
-        <listener-class>work.comeback.omo.listener.WebListener</listener-class>
+        <listener-class>work.comeback.omo.controller.listener.WebListener</listener-class>
     </listener>
 
     <!--
         @Desc WebAttributeListener 监听 web 数据变化
-        @Path work.comeback.omo.listener.WebAttributeListener
+        @Path work.comeback.omo.controller.listener.WebAttributeListener
     -->
     <listener>
-        <listener-class>work.comeback.omo.listener.WebAttributeListener</listener-class>
+        <listener-class>work.comeback.omo.controller.listener.WebAttributeListener</listener-class>
     </listener>
+
+    <!--
+        @Desc RequestTotalListener 监听 请求量级 变化
+        @Path work.comeback.omo.controller.listener.RequestTotalListener
+    -->
+    <listener>
+        <listener-class>work.comeback.omo.controller.listener.RequestTotalListener</listener-class>
+    </listener>
+
+    <!--
+        @Desc RequestTotalGuard 监听 请求量级 变化
+        @Path work.comeback.omo.controller.guard.RequestTotalGuard
+    -->
+    <servlet-mapping>
+        <servlet-name>RequestTotalGuard</servlet-name>
+        <url-pattern>/api/guard/getTotal</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RequestTotalGuard</servlet-name>
+        <servlet-class>work.comeback.omo.controller.guard.RequestTotalGuard</servlet-class>
+    </servlet>
+
+    <!--
+        @Desc RegisteredPageServlet 监听 注册的页面 变化
+        @Path work.comeback.omo.controller.guard.RegisteredPageGuard
+    -->
+    <servlet-mapping>
+        <servlet-name>RegisteredPageServlet</servlet-name>
+        <url-pattern>/api/guard/getRoutes</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisteredPageServlet</servlet-name>
+        <servlet-class>work.comeback.omo.controller.guard.RegisteredPageGuard</servlet-class>
+    </servlet>
 </web-app>

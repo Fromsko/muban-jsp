@@ -21,7 +21,7 @@ echo [INFO] cd to project_dir.
 cd ..
 
 echo [INFO] Start tailwindcss
-tailwindcss -c %current_dir%\tailwind.config.js -i %input_css% -o %output_css% --watch
+tailwindcss -c scripts\tailwind.config.js -i %input_css% -o %output_css% --watch
 
 echo [INFO] Exit
 exit /b

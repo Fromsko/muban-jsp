@@ -18,7 +18,7 @@ if %command%==1 (
 ) else if %command%==3 (
     start cmd /k "scripts\restart.bat"
 ) else if %command%==4 (
-    start cmd /k "scripts\setup_loader.bat"
+    cmd /k "scripts\setup_loader.bat"
 ) else if %command%==5 (
     start cmd /k "scripts\setup_db.bat"
 ) else if %command%==6 (
